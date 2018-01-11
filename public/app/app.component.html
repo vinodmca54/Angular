@@ -1,0 +1,47 @@
+<!-- <div>
+    <h3> User Details </h3>
+    
+    <table border=1>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                        <td width="20%">vinod</td>
+                        <td width="20%">miriyala</td>
+                        <td width="20%">vimnosdfijos.mail</td>
+                        <td width="20%">9444543543</td>
+                        <td width="20%">olivetechnologies</td>
+                </tr>
+        </tbody>
+    </table>
+</div> -->
+
+<div class="container">
+    <h1>User form</h1>
+    <form #userForm = "ngForm">
+        <div class="form-group">
+            <label>name</label>
+            <input type="text" class="form-control" name="uname" [(ngModel)]="uname">
+        </div>
+        <div class="form-group">
+            <label>mobile number</label>
+            <input type="text" class="form-control" name="umobilenum" [(ngModel)] ="umobilenum">
+        </div>
+        <div class="form-group">
+            <label>email id</label>
+    <input type="text" class="form-control" name="uemail" [(ngModel)] ="uemail">
+        </div>
+        <div class="form-group">
+            <label>password</label> 
+            <input type="text" class="form-control" name="upassword" [(ngModel)] ="upassword">
+        </div>
+        <button type="submit" class="btn btn-primary" (click) = "submituserdetails()">submit</button>
+    </form>
+</div>
